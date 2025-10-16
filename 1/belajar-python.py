@@ -1,0 +1,5 @@
+print('=============================')
+print('nama: elang')
+print('kelas: 15.1B')
+print('jurusan: informatika')
+print('=============================')
