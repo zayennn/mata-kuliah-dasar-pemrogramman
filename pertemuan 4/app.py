@@ -28,3 +28,6 @@ def grade(n):
     )
 
 print(grade(nilai))
+
+
+
