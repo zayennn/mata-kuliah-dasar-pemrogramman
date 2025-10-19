@@ -1,6 +1,9 @@
 # Program menghitung total gaji karyawan PT. Dingin Damai
+
 gaji_pokok = 300000
 
+# Input data karyawan
+nama = input("Masukkan nama karyawan: ")
 golongan = int(input("Masukkan golongan (1/2/3): "))
 pendidikan = input("Masukkan pendidikan (SMA/D1/D3/S1): ").upper()
 jam_kerja = int(input("Masukkan jumlah jam kerja: "))
@@ -38,6 +41,7 @@ total_gaji = gaji_pokok + tunjangan_jabatan + tunjangan_pendidikan + lembur
 
 # Tampilkan hasil
 print("\n=== RINCIAN GAJI KARYAWAN ===")
+print(f"Nama Karyawan        : {nama}")
 print(f"Gaji Pokok           : Rp {gaji_pokok}")
 print(f"Tunjangan Jabatan    : Rp {tunjangan_jabatan}")
 print(f"Tunjangan Pendidikan : Rp {tunjangan_pendidikan}")
