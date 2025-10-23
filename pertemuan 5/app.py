@@ -11,9 +11,9 @@ nis : {self.nis}
 major : {self.code_major}
 price : {self.price}""")
 
-mahasiswa = input("Masukkan nama mahasiswa : ")
+mahasiswa = input("Masukkan nama mahasiswa : ").capitalize()
 nis = input("Masukkan NIS mahasiswa : ")
-code_major = input("Masukkan jurusan mahasiswa (SI/SIA) : ")
+code_major = input("Masukkan jurusan mahasiswa (SI/SIA) : ").upper()
 
 if code_major == "SI" :
     price = 2400000
