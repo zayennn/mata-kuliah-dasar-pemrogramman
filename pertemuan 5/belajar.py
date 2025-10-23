@@ -8,4 +8,9 @@ for i in range(len(mapel)):
 # ======================================
 
 
+count = 0
 
+
+while ( count < 5 ) :
+    print('count is : ', count)
+    count += 1
