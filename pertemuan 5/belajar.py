@@ -21,3 +21,6 @@ print('good bye!')
 
 
 text = "PemrogrammanPython"
+
+for tulisan in text :
+    print(tulisan)
