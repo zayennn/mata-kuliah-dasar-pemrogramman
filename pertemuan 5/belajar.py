@@ -14,3 +14,10 @@ while ( count < 5 ) :
     print('count is : ', count + 1)
     count += 1
 print('good bye!')
+
+
+
+# ======================================
+
+
+text = "PemrogrammanPython"
