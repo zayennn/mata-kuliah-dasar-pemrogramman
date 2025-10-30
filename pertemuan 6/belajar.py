@@ -1,3 +1,5 @@
+my_alamat = []
+
 while True :
     
     print(f"""
@@ -8,14 +10,13 @@ while True :
     4. keluar
     """)
     
-    my_alamat = []
     
     user_choice = int(input('masukan angka daftar menu : '))
     
     if user_choice == 1 :
         if my_alamat :
-            for i in range(my_alamat) :
-                print()
+            for i,akun in enumerate(my_alamat, start=1) :
+                print(f"{i}. Nama: {akun[0]} | Alamat: {akun[1]}")
         else :
             print('data kosong, isi datamu terlebih dahulu')
             
@@ -29,9 +30,18 @@ while True :
         print('data berhasil di tambahkan!')
         
     elif user_choice == 3 :
-        alamat = input('tambahkan alamat anda : ')
-        my_alamat[1].append(alamat)
-        print('alamat berhasil di tambahkan!')
+       if my_alamat:
+        print("\nPilih akun yang mau ditambah alamat:")
+        for i, akun in enumerate(my_alamat, start=1):
+            print(f"{i}. {akun[0]} (alamat: {akun[1]})")
+        
+        pilih = int(input("Masukkan nomor akun: ")) - 1
+        if 0 <= pilih < len(my_alamat):
+            alamat_baru = input("Tambahkan alamat baru: ")
+            my_alamat[pilih][1] += f", {alamat_baru}"
+            print("Alamat berhasil ditambahkan!")
+        else:
+            print("Nomor akun tidak valid.")
     
     elif user_choice == 4 :
         print('program telah berhenti')
