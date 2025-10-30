@@ -10,3 +10,9 @@ num.extend([4,5,6])
 
 print(num)
 
+# map
+num2 = [1,2,3,4,5]
+
+hasil2 = list(map(lambda x: x * 2))
+
+print(hasil2)
