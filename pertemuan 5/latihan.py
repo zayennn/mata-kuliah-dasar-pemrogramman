@@ -22,7 +22,9 @@ while True:
         break
     print("Jumlah tidak valid! Maksimal 3 jenis potongan (D/P/S)")
 
-data_pesanan = []
+data_pesanan = [
+    
+]
 
 for i in range(jenis_beli):
     print(f"\nJenis ke-{i+1}")
