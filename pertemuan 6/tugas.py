@@ -11,4 +11,5 @@ for i in range(ulang):
     list_uts.append(int(input('masukan nilai uts anda : ')))
     list_uas.append(int(input('masukan nilai uas anda : ')))
     
-    
+for i in range(ulang) :
+    list_total.append( (list_uas[i] + list_uts) / 2 )
