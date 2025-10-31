@@ -17,7 +17,7 @@ elif golongan == 3:
     tunjangan_jabatan = 0.15 * gaji_pokok
 else:
     tunjangan_jabatan = 0
-    
+
 # Hitung tunjangan pendidikan
 if pendidikan == "SMA":
     tunjangan_pendidikan = 0.025 * gaji_pokok
@@ -29,7 +29,7 @@ elif pendidikan == "S1":
     tunjangan_pendidikan = 0.30 * gaji_pokok
 else:
     tunjangan_pendidikan = 0
-    
+
 # Hitung honor lembur
 if jam_kerja > 8:
     lembur = (jam_kerja - 8) * 3500

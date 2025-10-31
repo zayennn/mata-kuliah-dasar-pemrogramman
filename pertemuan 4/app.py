@@ -17,14 +17,25 @@ for i, msh in enumerate(mahasiswa, start=1):
 
 nilai = int(input("masukan nilai mahasiswa : "))
 
+
 def grade(n):
     return (
-        "masukan nilai yang valid antara 0 - 100" if n < 0 or n > 100 else
-        "nilai mahasiswa : A" if n >= 80 else
-        "nilai mahasiswa : B" if n > 70 else
-        "nilai mahasiswa : C" if n > 60 else
-        "nilai mahasiswa : D" if n > 30 else
-        "nilai mahasiswa : E"
+        "masukan nilai yang valid antara 0 - 100"
+        if n < 0 or n > 100
+        else (
+            "nilai mahasiswa : A"
+            if n >= 80
+            else (
+                "nilai mahasiswa : B"
+                if n > 70
+                else (
+                    "nilai mahasiswa : C"
+                    if n > 60
+                    else "nilai mahasiswa : D" if n > 30 else "nilai mahasiswa : E"
+                )
+            )
+        )
     )
+
 
 print(grade(nilai))

@@ -5,12 +5,12 @@
 #     print('kamu masih dibawah umur')
 # else:
 #     print('kamu sudah besar')
-    
+
 # looping
 # for i in range(5):
 #     print(f'print ke-${i}')
-    
-    
+
+
 # sorting
 # angka = [5,4,3,2,1]
 
@@ -28,7 +28,7 @@
 
 
 # map
-angka3 = [1,2,3,4,5]
+angka3 = [1, 2, 3, 4, 5]
 
 kaliDua = list(map(lambda x: x * 2, angka3))
 

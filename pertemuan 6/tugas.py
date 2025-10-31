@@ -5,5 +5,5 @@ list_total = []
 
 ulang = 2
 
-for i in range(ulang) :
-    print("data ke - " + str( i + 1 ))
+for i in range(ulang):
+    print("data ke - " + str(i + 1))

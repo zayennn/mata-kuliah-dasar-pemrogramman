@@ -1,20 +1,18 @@
-mapel = [ 'matematika', 'fisika', 'kimia']
+mapel = ["matematika", "fisika", "kimia"]
 # iterasi list menggunakan indeks
 for i in range(len(mapel)):
     print("Saya suka", mapel[i])
-    
-    
-    
+
+
 # ======================================
 
 
 count = 0
 
-while ( count < 5 ) :
-    print('count is : ', count + 1)
+while count < 5:
+    print("count is : ", count + 1)
     count += 1
-print('good bye!')
-
+print("good bye!")
 
 
 # ======================================
@@ -22,11 +20,10 @@ print('good bye!')
 
 text = "PemrogrammanPython"
 
-for tulisan in text :
+for tulisan in text:
     print(tulisan)
-    
-    
-    
+
+
 # ======================================
 
 ulang = int(input("Masukkan jumlah data yang ingin diinput: "))
