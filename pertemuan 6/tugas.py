@@ -6,13 +6,13 @@ list_total = []
 ulang = 2
 
 for i in range(ulang):
-    print("data ke - " + i + 1)
+    print("data ke - " + str(i + 1))
     list_nim.append(int(input('masukan nim anda : ')))
     list_uts.append(int(input('masukan nilai uts anda : ')))
     list_uas.append(int(input('masukan nilai uas anda : ')))
     
 for i in range(ulang) :
-    list_total.append( (list_uas[i] + list_uts) / 2 )
+    list_total.append( (list_uas[i] + list_uts[i]) / 2 )
     
 print("=============================================================")
 print("Nim Nilai Uts Nilai UAS Total")
