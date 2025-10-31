@@ -13,6 +13,13 @@ print(num)
 # map
 num2 = [1,2,3,4,5]
 
-hasil2 = list(map(lambda x: x * 2))
+hasil2 = list(map(lambda x: x * 2, num2))
 
 print(hasil2)
+
+# filter
+num3 = [1,2,3,4,5]
+
+hasil3 = list(filter(lambda x: x % 2 == 0, num3))
+
+print(hasil3)
