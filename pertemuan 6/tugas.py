@@ -13,3 +13,10 @@ for i in range(ulang):
     
 for i in range(ulang) :
     list_total.append( (list_uas[i] + list_uts) / 2 )
+    
+print("=============================================================")
+print("Nim Nilai Uts Nilai UAS Total")
+print("=============================================================")
+
+for i in range(ulang):
+    print ("%s \t %i \t\t %i \t\t\t %i" % (list_nim[i],list_uts[i],list_uas[i],list_total[i]))
