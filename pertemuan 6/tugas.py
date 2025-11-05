@@ -1,22 +1,29 @@
-list_nim = []
-list_uts = []
-list_uas = []
-list_total = []
+class Mahasiswa :
+    def __init__(self, nama, nim, uts, uas):
+        self.nama = nama
+        self.nim = nim
+        self.uts = uts
+        self.uas = uas
+        
+    def rata_nilai(self) :
+        print(f"""
+================ data mahasiswa ================
 
-ulang = 2
+nama mahasiswa       : {self.nama}
+nim mahasiswa        : {self.nim}
+nilai uts mahasiswa  : {self.uts}
+nilai uas mahasiswa  : {self.uas}
+nilai rata"          : { ( self.uts + self.uas ) / 2}
+""""")
+        
+jumlah_data = int(input('masukan jumlah data mahasiswa : '))
 
-for i in range(ulang):
-    print("data ke - " + str(i + 1))
-    list_nim.append(int(input('masukan nim anda : ')))
-    list_uts.append(int(input('masukan nilai uts anda : ')))
-    list_uas.append(int(input('masukan nilai uas anda : ')))
-    
-for i in range(ulang) :
-    list_total.append( (list_uas[i] + list_uts[i]) / 2 )
-    
-print("=============================================================")
-print("Nim Nilai Uts Nilai UAS Total")
-print("=============================================================")
-
-for i in range(ulang):
-    print ("%s \t %i \t\t %i \t\t\t %i" % (list_nim[i],list_uts[i],list_uas[i],list_total[i]))
+for i in range(1, jumlah_data + 1) :
+    print(f"\n================ input data maha siswa ke - {i} ================\n")
+    nama = input('nama mahasiswa : ').capitalize()
+    nim = int(input('nim mahasiswa : '))
+    nilai_uts = float(input('nilai uts mahasiswa : '))
+    nilai_uas = float(input('nilai uas mahasiswa : '))
+        
+    data_mahasiswa = Mahasiswa(nama, nim, nilai_uts, nilai_uas)
+    data_mahasiswa.rata_nilai()
