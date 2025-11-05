@@ -34,7 +34,7 @@ nama mahasiswa       : { self.nama }
 nim mahasiswa        : { self.nim }
 nilai uts mahasiswa  : { self.uts }
 nilai uas mahasiswa  : { self.uas }
-nilai rata"          : { ( self.uts + self.uas ) / 2}
+nilai rata"          : { ( self.uts + self.uas ) / 2 }
 """"")
         
 jumlah_data = input('masukan jumlah data mahasiswa : ')
