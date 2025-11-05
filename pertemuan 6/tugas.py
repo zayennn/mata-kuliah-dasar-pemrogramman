@@ -40,7 +40,7 @@ nilai rata"          : { ( self.uts + self.uas ) / 2 }
 jumlah_data = input('masukan jumlah data mahasiswa : ')
 
 try :
-    jumlah_data = int(jumlah_data)
+    # jumlah_data = int(jumlah_data)
     
     for i in range( 1, jumlah_data + 1 ) :
         print(f"\n================ input data maha siswa ke - {i} ================\n")
