@@ -6,7 +6,7 @@ mat = [
 ]
 
 print(f"""
-- baris pertama: kolom pertama : {mat[0][0]}
+- baris pertama kolom pertama : {mat[0][0]}
 - baris pertama kolom kedua : {mat[0][1]}
 - baris pertama kolom ketiga : {mat[0][2]}
 
