@@ -5,12 +5,17 @@ mat = [
     [0]
 ]
 
-print(f"""
-- baris pertama kolom pertama : {mat[0][0]}
-- baris pertama kolom kedua : {mat[0][1]}
-- baris pertama kolom ketiga : {mat[0][2]}
+# print(f"""
+# - baris pertama kolom pertama : {mat[0][0]}
+# - baris pertama kolom kedua : {mat[0][1]}
+# - baris pertama kolom ketiga : {mat[0][2]}
 
-- baris ketiga kolom ketiga : {mat[2][2]}
+# - baris ketiga kolom ketiga : {mat[2][2]}
 
-- baris keempat kolom pertama : {mat[3][0]}
-""")
+# - baris keempat kolom pertama : {mat[3][0]}
+# """)
+
+
+for i, matrix in enumerate(mat, start=1) :
+    for j in range(mat[i]) :
+        print(j)
