@@ -7,7 +7,7 @@ class Mahasiswa :
         
     def rata_nilai( self ) :
         print(f"""
-================ data mahasiswa ================
+================ data mahasiswa {i} ================
 
 nama mahasiswa       : { self.nama }
 nim mahasiswa        : { self.nim }
